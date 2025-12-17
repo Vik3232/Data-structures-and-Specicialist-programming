@@ -1,14 +1,16 @@
 import java.time.LocalDate;
 /**
- * This Activity class gonna single activity of AddToStock or RemoveFromStock.
+ * This Activity class do single activity of AddToStock or RemoveFromStock.
  */
 
  // ATTRIBUTES 
 
     // These store the data for each activity.
+
 public class Activity{
     
     // ATTRIBUTES
+    
     // These gonna store data for each of the Activity.**//
     // Once we create an activity, the details shouldn't be changed from outside.
     // Because we use private variables here to keep the data safe.**//
@@ -53,23 +55,23 @@ public class Activity{
             return activitydate;
         }
         
-        // I override toString to make the output look nice for the user in the console.
-    // It adds "(Added)"or "(Removed)" so the user can quickly see what is happening there.
-        
+        // I use override to chnage existing tostring method to my one if got any error compiler shows
+        //eg same like changing templete given by the teaacher.
         
        @Override
        
     public String toString() {
         
         String status;
-        // Logic: If name IS "AddToStock", then status is "Added"
+        // Logic: simple if else logic 
+        
         if (activityType.equals("AddToStock")) {
             status = " (Added)";
         } else {
             status = " (Removed)";
         }
         
-        //  Thhis  going to Return the formatted string with all details which the attributes store in it.\
+        //  Thhis Return the formatted pattern which needed in for each activity eg= 67 , added,  89, 7/9/25. ,.\
         
         return "Activity ID: " + activityID + 
                ", Type: " + activityType + 

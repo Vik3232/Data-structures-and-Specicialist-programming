@@ -18,6 +18,7 @@ public class MyLinkedList<T> implements Iterable<T> {
     private class Node {
         
         // Each node holds one piece of data and a link to the next node.
+        
         T data;       // The data for this node
         Node next;    // The link to the next node
 
@@ -36,12 +37,12 @@ public class MyLinkedList<T> implements Iterable<T> {
     private Node head;
 
     // CONSTRUCTOR
+    
     public MyLinkedList() {
         
         this.head = null; // List Starts empty.
     }
 
-    // CORE METHODS
 
     /**
      * This method gonna Adds a new item to the end of the list .
@@ -52,6 +53,7 @@ public class MyLinkedList<T> implements Iterable<T> {
         Node newNode = new Node(data); // Creates the new node
 
         //if the list is empty.
+        
         if (head == null) {
             
             head = newNode; //Than  The new node is gonna be the head.
@@ -80,12 +82,18 @@ public class MyLinkedList<T> implements Iterable<T> {
     /**
      * 
      *  This  is our Custom Search Algorithm
+     * 
      In whICH WE Search For Product by its ID.
+     * 
      * This is our custom Linear Search which we we gonna use.
      
      * @param productId The ID of the product to find.
+     * 
      * @return The  Product object if it found it, or null if it not found.
+     * 
+     * 
      */
+    
     public Product findProductById(int productId) {
         
         Node current = head; // Starts from the  the beginning.
@@ -93,11 +101,13 @@ public class MyLinkedList<T> implements Iterable<T> {
         //I have to cast the generic value to Product to check the ID in.
         
         while (current != null) {
+            
             // We must "cast" the generic 'T data' to a 'Product' 
             // by doing this we just give a label to "T" data as product so we can easily see it
             // because java cant directly see the T data thats why we cast the data.
             
             // After can call the .getProductId() method.
+            
             Product product = (Product) current.data;
             
             if (product.getProductId() == productId) {
@@ -119,6 +129,7 @@ public class MyLinkedList<T> implements Iterable<T> {
     
     
     public boolean removeByProductId(int productId) {
+        
         // The list is empty.
         
         if (head == null) {

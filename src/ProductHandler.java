@@ -1,11 +1,10 @@
-
 import java.time.LocalDate;
 import java.util.List; 
 
 /**
  * This class is the main engine of the application.
  * Which gonna handle all the Functionalities
- * It manages the list of products  by using MyLinkedList 
+  
  * and handles other all the main  functionalities (F1-F5).
 
  */
@@ -88,7 +87,7 @@ public class ProductHandler {
     
     public void displayAllProducts() {
         
-        System.out.println("--- Displaying All Products ---");
+        System.out.println("--------------- Displaying All Products----------------------");
         
         // Our 'MyLinkedList' is "Iterable", so we can use a for-each loop without any problem.
         
@@ -96,7 +95,7 @@ public class ProductHandler {
             
             System.out.println(p); // This Calls the Product.toString() method which is at the end of the code of product class.
         }
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------------------------------------");
     }
 
     /**
@@ -166,7 +165,7 @@ public class ProductHandler {
             }
         }
 
-        // Step 4: All checks passed. Create and add the activity. after every time we create a product we add new activity
+        //  All checks passed. Create and add the activity. after every time we create a product we add new activity
         Activity newActivity = new Activity(
                 
             this.getActivityID, 
