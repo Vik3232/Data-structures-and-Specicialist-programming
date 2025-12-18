@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 // commands going to product handler after the product handler do work in cordination with 
 // other classes with their logics and we going to get the final results.
 
-public class Main{
+public class Mains{
 
     private static final ProductHandler system = new ProductHandler();
     
