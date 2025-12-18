@@ -241,20 +241,7 @@ public class ProductHandler {
     
     
     
-    // ... existing code ...
-
-    // NEW: Allow the Helper class to see the inventory
-    public MyLinkedList<Product> getInventory() {
-        return this.productList;
-    }
-    
-} // End of class
-    
-    
-    
-    
-    
-    
+   
     
     
     
